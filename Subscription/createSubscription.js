@@ -1,10 +1,10 @@
-const stripe = require("stripe")("sk_test_MaaQ0qA6SyQzY2enxSHEwsDT00Yv34XWfr");
+const stripe = require("stripe")("sk_test_SwfmewLuMrTtIw4j1gzpXvFG");
 
 stripe.subscriptions.create({
-  customer: "cus_FTsi0jLTSW125D",
+  customer: "cus_FXMcpNNiPdrZjf",
   items: [
     {
-      plan: "plan_FUHLD4JwmbRU1H",
+      plan: "DefaultPlan",
     },
   ]
 }, function(err, subscription) {
@@ -12,7 +12,9 @@ stripe.subscriptions.create({
     if(err){
         console.log(err);
     }else{
-        console.log(subscription);
+        console.log(subscription.status);
+        let date = new Date(subscription.start);
+        console.log(date);
     }
   }
 );
