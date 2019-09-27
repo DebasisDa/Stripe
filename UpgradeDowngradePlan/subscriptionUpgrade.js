@@ -10,11 +10,11 @@ a.addDays(10);
 let b = new Date(a/1000).getTime();
 
 stripe.subscriptions.update(
-  'sub_FnPjrGmHS5idAN',{
-    plan: 'PremiumPlan',
-    billing_cycle_anchor:'now'  
+  'sub_FrvwTI0r0jyRHf',{
+   plan: 'PremiumPlan',
+   billing_cycle_anchor:'now'
     // Billing invoice will change to today and pay remaing amount 
-    // after compromise old plan data witn new plan data.                          
+    // after compromise old plan data witn new plan data.                    
  },
   function(err, subscription) {
     // asynchronously called

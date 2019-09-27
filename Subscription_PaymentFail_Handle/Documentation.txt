@@ -1,0 +1,16 @@
+.............................................................
+Documentation ::
+https://stripe.com/docs/billing/lifecycle
+https://stripe.com/docs/api/subscriptions/object
+https://stripe.com/docs/billing/subscriptions/billing-cycle
+...............................................................
+
+Subscription Billing Date:
+1. Subscription created at 2nd jan -> 2nd feb -> 2nd mar
+2. Subscription created at 31th jan -> 28/29 th feb -> 31th march
+.........................................................................
+
+Subscriptin Status: 
+active
+incomplete
+incomplete_expired ( after 23 hour incomplete )
